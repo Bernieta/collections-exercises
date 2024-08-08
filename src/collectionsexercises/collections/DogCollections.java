@@ -2,6 +2,7 @@ package collectionsexercises.collections;
 
 import collectionsexercises.dog.Dog;
 
+import java.util.Collection;
 import java.util.List;
 
 public interface DogCollections {
@@ -12,10 +13,10 @@ public interface DogCollections {
 
     boolean removeDog(Dog dog);
 
-    List<Dog> filterDogByName(String name);
+    Collection<Dog> filterDogByName(String name);
 
-    default void showAllDogs(List<Dog> list) {
-        list.forEach((dog) -> {
+    default void showAllDogs(Collection<Dog> collection) {
+        collection.forEach((dog) -> {
             System.out.println("Nombre: " + dog.getName());
             System.out.println("Dci: " + dog.getDci());
             System.out.println("Edad: " + dog.getAge());

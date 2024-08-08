@@ -3,6 +3,7 @@ package collectionsexercises.collections;
 import collectionsexercises.dog.Dog;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class ArrayListDog implements DogCollections {
@@ -37,7 +38,7 @@ public class ArrayListDog implements DogCollections {
     }
 
     @Override
-    public List<Dog> filterDogByName(String nameDog) {
+    public Collection<Dog> filterDogByName(String nameDog) {
         return listDog
                 .stream()
                 .filter((d) -> d.getName().equals(nameDog))
