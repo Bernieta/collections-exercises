@@ -32,9 +32,13 @@ public class QueueDog implements DogCollections {
                 .orElse(null);
     }
 
+    public Dog pollDog() {
+        return queueDog.poll();
+    }
+
     @Override
     public boolean removeDog(Dog dog) {
-        return queueDog.remove(dog);
+        return false;
     }
 
     public Dog peekDog() {

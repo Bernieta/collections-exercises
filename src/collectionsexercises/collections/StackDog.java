@@ -13,7 +13,7 @@ public class StackDog implements DogCollections {
         this.stackDog = new Stack<>();
     }
 
-    public Stack<Dog> getDogStack() {
+    public Stack<Dog> getStackDog() {
         return stackDog;
     }
 
